@@ -5,7 +5,6 @@ import { humanizeMilliseconds, snowflakeToTimestamp } from '../../util/helpers.t
 
 export class pingService
 {
-    public data: { content: string };
     public log: { warn: (...args: any[]) => void; debug: (...args: any[]) => void; log: (level: LogLevels, ...args: any[]) => (void | undefined); error: (...args: any[]) => void; info: (...args: any[]) => void; fatal: (...args: any[]) => void };
 
     private static data: { content: string };
@@ -14,11 +13,6 @@ export class pingService
     constructor()
     {
         this.log = logger({ name: 'Command: Ping' });
-
-        this.data =
-            {
-                content: ''
-            }
     }
     
     static async structure(interaction: { id: any; token?: any; })
