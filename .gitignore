@@ -3,3 +3,6 @@ fileloader.ts
 
 # Config Files
 .env
+
+# Ide Config Files
+.idea/
