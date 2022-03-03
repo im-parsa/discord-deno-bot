@@ -11,7 +11,6 @@ createCommand(
 
             execute: async (bot, interaction) =>
             {
-                console.log('hiiii')
                 await pingService.send(bot, interaction);
             }
     });
